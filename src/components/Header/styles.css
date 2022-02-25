@@ -1,0 +1,69 @@
+.header-component {
+  background-image: url('assets/page-header-banner-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  height: 308px;
+}
+
+.header-component .title {
+  color: #ffffff;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin: 0 auto;
+  padding-top: 37px;
+}
+
+.header-component .subtitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.header-component .build-portfolio-button {
+  background-color: #ef476f;
+  border-radius: 15px;
+  color: #ffffff;
+  height: 65px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  margin-top: 8px;
+  padding: 0 26px
+}
+
+@media only screen and (max-width: 768px) {
+  .header-component {
+    background-image: url('assets/page-header-banner-tablet.png');
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-component {
+    background-image: url('assets/page-header-banner-mobile.jpg');
+    height: 430px;
+  }
+
+  .header-component .title {
+    text-align: left;
+    line-height: 1.4;
+    margin: 0 50px 0 20px;
+    padding-top: 40px;
+  }
+  
+  .header-component .subtitle {
+    text-align: left;
+    margin: 20px 20px auto 20px;
+    line-height: 1.4;
+  }
+
+  .header-component .build-portfolio-button {
+    display: flex;
+    justify-content: left;
+    margin: 20px 20px auto;
+    align-items: center;
+  }
+  
+}
