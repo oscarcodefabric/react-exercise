@@ -29,7 +29,6 @@ const UserCard = ({ user }) => {
       <img
         alt="example"
         className="card-image"
-        hoverable
         src={userImagePlaceholder}
       />
     </div>

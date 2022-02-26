@@ -1,0 +1,15 @@
+.users-grid {
+  background-color: #f2f6f7;
+  width: 100%;
+}
+
+.users-grid-container {
+  max-width: 1060px !important;
+  margin: auto 20px;
+}
+
+.users-grid-container .grid-title {
+  font-weight: 700;
+  font-size:1.5rem;
+  margin-top: 46px;
+}

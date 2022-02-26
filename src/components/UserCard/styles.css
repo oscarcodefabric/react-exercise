@@ -1,6 +1,8 @@
 .user-card {
   width: 320px;
   height: 307px;
+  margin: 9px 16px !important;
+  display: inline-block;
 }
 
 .user-card .avatar {
