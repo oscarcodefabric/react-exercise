@@ -1,0 +1,39 @@
+.user-card {
+  width: 320px;
+  height: 307px;
+}
+
+.user-card .avatar {
+  background-color: #000000;
+}
+
+.user-card .card-image {
+  max-width: 320px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.user-card .image-container {
+  overflow: hidden;
+  height: 212px
+}
+
+.user-card .card-content {
+  text-align: left;
+  margin-top: -5px;
+}
+
+.user-card .ant-card-body {
+  margin-top: -10px
+}
+
+.user-card .user-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: -3px;
+}
+
+.user-card .user-city {
+  font-size: 0.85rem;
+}
