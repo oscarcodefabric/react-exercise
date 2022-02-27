@@ -13,10 +13,8 @@ const UserCard = ({ user, onFavoriteClick }) => {
 
   const generateInitials = () => {
     const { name } = user
-    const splicedName = name.split(' ')
-    return `${(splicedName[0] || '').charAt(0)}${(
-      splicedName[1] || ''
-    ).charAt(0)}`
+    const splitName = name.split(' ')
+    return `${(splitName[0] || '').charAt(0)}${(splitName[1] || '').charAt(0)}`
   }
   const userImg = (
     <div className="image-container">
@@ -37,13 +35,13 @@ const UserCard = ({ user, onFavoriteClick }) => {
         <Avatar
           alt="like button"
           className="like-icon"
-          onClick={() => onFavoriteClick(user.id)}
           icon={
             <Icon
               className={user.liked ? 'like' : 'dislike'}
               component={Heart}
             />
           }
+          onClick={() => onFavoriteClick(user.id)}
         />
       </aside>
     </Card>

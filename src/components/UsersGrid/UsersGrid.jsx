@@ -17,7 +17,7 @@ const UsersGrid = ({ users, onFavoriteClick }) => {
       <Row justify="center">
         <Col className="users-grid-container">
           <h3 className="grid-title">Explore Our Top Rated Artists Below</h3>
-          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <SearchBar setSearchTerm={setSearchTerm} />
           {filteredUsers.map((user) => (
             <UserCard
               key={user.id}

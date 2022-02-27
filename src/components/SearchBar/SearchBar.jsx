@@ -18,8 +18,8 @@ const SearchBar = ({ setSearchTerm }) => {
       <Search
         addonBefore={<Icon className="search-icon" component={SearchIcon} />}
         className="search-bar"
-        placeholder="Artists Names &amp; Styles"
         enterButton={<button className="search-button">Search</button>}
+        placeholder="Artists Names &amp; Styles"
         onSearch={handleSearch}
       />
     </div>
