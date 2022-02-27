@@ -12,14 +12,13 @@
   font-size: 3.75rem;
   font-weight: 700;
   margin: 0 auto;
-  padding-top: 37px;
+  padding-top: 42px;
 }
 
 .header-component .subtitle {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 5px;
 }
 
 .header-component .build-portfolio-button {
@@ -30,7 +29,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   border: none;
-  margin-top: 8px;
+  margin-top: 7px;
   padding: 0 26px;
 }
 

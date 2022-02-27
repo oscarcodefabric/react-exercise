@@ -11,6 +11,13 @@ import './styles.css'
 const UserCard = ({ user, onFavoriteClick }) => {
   const { address } = user
 
+  const generateInitials = () => {
+    const { name } = user
+    const splicedName = name.split(' ')
+    return `${(splicedName[0] || '').charAt(0)}${(
+      splicedName[1] || ''
+    ).charAt(0)}`
+  }
   const userImg = (
     <div className="image-container">
       <img alt="user" className="card-image" src={userImagePlaceholder} />
@@ -20,10 +27,10 @@ const UserCard = ({ user, onFavoriteClick }) => {
   return (
     <Card className="user-card" cover={userImg} hoverable>
       <Avatar className="avatar" size={40}>
-        {user.username[0]}
+        {generateInitials()}
       </Avatar>
       <div className="card-content">
-        <h3 className="user-name">{user.username}</h3>
+        <h3 className="user-name">{user.name}</h3>
         <h5 className="user-city">{`${address.city}, ${address.street}`}</h5>
       </div>
       <aside>
