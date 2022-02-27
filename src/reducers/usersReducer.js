@@ -2,6 +2,7 @@ import {
   FETCH_USERS_FAILURE,
   FETCH_USERS_REQUEST,
   FETCH_USERS_SUCCESS,
+  SET_LIKE_USER,
 } from 'constants/usersConstants'
 
 const defaultState = {
@@ -29,6 +30,24 @@ export default (state = defaultState, action) => {
       return {
         ...state,
         isLoading: false,
+      }
+    }
+    case SET_LIKE_USER: {
+      const { id } = action
+      const { users } = state
+      const chosenUser = users.find((user) => user.id === id)
+      const liked = chosenUser.liked ? true : false
+      const changedUsers = users.map((user) =>
+        id === user.id
+          ? {
+              ...user,
+              liked: !liked,
+            }
+          : user
+      )
+      return {
+        ...state,
+        users: changedUsers,
       }
     }
     default:

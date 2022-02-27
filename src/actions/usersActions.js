@@ -3,6 +3,7 @@ import {
   FETCH_USERS_FAILURE,
   FETCH_USERS_REQUEST,
   FETCH_USERS_SUCCESS,
+  SET_LIKE_USER,
 } from 'constants/usersConstants'
 
 import client from './index'
@@ -30,3 +31,8 @@ export const fetchUsers = () => async (dispatch) => {
     dispatch(fetchUsersFailure)
   }
 }
+
+export const setLikeUser = (id) => ({
+  type: SET_LIKE_USER,
+  id,
+})
