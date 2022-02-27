@@ -5,6 +5,12 @@
   src: url('assets/fonts/avenir-next/AvenirNext-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 600;
+  font-style: normal;
+  src: url('assets/fonts/avenir-next/AvenirNext-Semi-Bold.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'Avenir Next';

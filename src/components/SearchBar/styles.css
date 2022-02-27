@@ -1,0 +1,47 @@
+.search-bar {
+  width: 661px;
+}
+
+.search-bar input, .search-bar button {
+  height: 50px;
+  border:  none;
+}
+
+.search-bar .search-button {
+  width: 104px;
+  background-color: #118ab2;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  font-weight: 500;
+}
+
+.search-bar ::placeholder {
+  color: #000000;
+  font-weight: 600;
+}
+
+.search-bar .search-icon {
+  font-size: 25px;
+}
+
+.search-bar .ant-input-group-addon{
+  border: none;
+  background-color: #ffffff;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-bar-container {
+  margin: 19px auto 68px auto
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: min(90vw, 661px)
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-bar {
+    width: min(90vw, 320px)
+  }
+}
