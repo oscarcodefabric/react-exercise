@@ -8,7 +8,7 @@ import userImagePlaceholder from 'assets/user-image-placeholder.jpg'
 
 import './styles.css'
 
-const UserCard = ({ user }) => {
+const UserCard = ({ user, onFavoriteClick }) => {
   const { address } = user
 
   const userImg = (
@@ -30,6 +30,7 @@ const UserCard = ({ user }) => {
         <Avatar
           alt="like button"
           className="like-icon"
+          onClick={() => onFavoriteClick(user.id)}
           icon={
             <Icon
               className={user.liked ? 'like' : 'dislike'}
@@ -44,6 +45,11 @@ const UserCard = ({ user }) => {
 
 UserCard.propTypes = {
   user: PropTypes.object.isRequired,
+  onFavoriteClick: PropTypes.func,
+}
+
+UserCard.defaultProps = {
+  onFavoriteClick: () => {},
 }
 
 export default UserCard
